@@ -5,9 +5,13 @@ import News from "./components/News";
 import "./App.css";
 
 function App() {
+  const [searchResults, setSearchResults] = useState([]);
+  const handleSearchResults = (results) => {
+    setSearchResults(results);
+  };
   return (
     <NewsContextProvider>
-      <News />
+        <News />
     </NewsContextProvider>
   );
 }
