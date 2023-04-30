@@ -6,7 +6,7 @@ export const NewsContext = createContext();
 export const NewsContextProvider = (props) => {
   const [data, setData] = useState();
   const [searchQuery, setSearchQuery] = useState("Apple"); // set default search query
-  const apiKey = "d3a68d3a93a54948a016a1553bc4d20c";
+  const apiKey = "147bf534818043acb04608b4a555a7c5";
 
   useEffect(() => {
     axios
